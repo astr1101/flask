@@ -10,7 +10,7 @@ def index():
 
 @app.route('/test')
 def test():
-    return jsonify({"Choo Choo": BLAH!"})
+    return jsonify({"Choo Choo": "BLAH!"})
 
 if __name__ == '__main__':
     app.run(debug=True, port=os.getenv("PORT", default=5000))
